@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 
 
 
-const Home: NextPage = ({ teste, payment }: any) => {
+const Home: NextPage = ({ payment }: any) => {
 
   return (
     <div className={styles.container}>
@@ -52,7 +52,6 @@ export async function getServerSideProps(ctx: GetServerSidePropsContext) {
   return {
     props: {
       payment: JSON.parse(JSON.stringify(payments)),
-      teste: 'teste',
     },
   }
 }
