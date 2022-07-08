@@ -23,6 +23,7 @@ const Home: NextPage = ({ teste, payment }: any) => {
       <main className={styles.main}>
 
         <a href={payment.response.sandbox_init_point}>PAGAR</a>
+        <a>R$10,50</a>
       </main>
     </div>
   )
