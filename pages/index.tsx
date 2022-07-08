@@ -31,7 +31,7 @@ export default Home
 export async function getServerSideProps(ctx: GetServerSidePropsContext) {
 
   mercadopago.configure({
-    access_token: `TEST-6333471751745298-070807-6dfbcdf3bdbbf2ef09f39f827e847654-294413052`
+    access_token: `TEST-8453388674292536-011515-d3265b956ab5f6116fef05a278d67cac-294413052`
   });
 
   const payments = await mercadopago.preferences.create({
