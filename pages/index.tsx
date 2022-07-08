@@ -8,9 +8,6 @@ import styles from '../styles/Home.module.css'
 
 
 const Home: NextPage = ({ teste, payment }: any) => {
-  console.log(teste);
-  console.log(payment);
-
 
   return (
     <div className={styles.container}>
@@ -34,7 +31,7 @@ export default Home
 export async function getServerSideProps(ctx: GetServerSidePropsContext) {
 
   mercadopago.configure({
-    access_token: `${process.env.MERCADO_PAGO_SEGRET}`
+    access_token: `TEST-6333471751745298-070807-6dfbcdf3bdbbf2ef09f39f827e847654-294413052`
   });
 
   const payments = await mercadopago.preferences.create({
@@ -47,8 +44,8 @@ export async function getServerSideProps(ctx: GetServerSidePropsContext) {
       }
     ],
     back_urls: {
-      success: `${process.env.MERCADO_PAGO_CALLBACK_SUCCESS}`,
-      failure: `${process.env.MERCADO_PAGO_CALLBACK_ERROR}`,
+      success: `https://simple-mercadopago-payments.vercel.app/success`,
+      failure: `https://simple-mercadopago-payments.vercel.app/error`,
     }
   });
 
