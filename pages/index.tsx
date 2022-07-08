@@ -9,6 +9,8 @@ import styles from '../styles/Home.module.css'
 
 const Home: NextPage = ({ payment }: any) => {
 
+  console.log(payment);
+
   return (
     <div className={styles.container}>
       <Head>
