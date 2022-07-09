@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 const Header: React.FC = () => {
   const router = useRouter();
   return (
-    <div className='flex items-center bg-neutral-900'>
+    <div className='flex items-center justify-center bg-neutral-900'>
       <div className='p-2 flex items-center justify-between w-full md:w-[1200px]'>
         <img src='logo_expo.png' className='md:w-[80px] w-[50px]' />
         <div className='flex items-center justify-between gap-4'>
