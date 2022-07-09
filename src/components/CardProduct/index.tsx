@@ -6,9 +6,12 @@ const CardProduct: React.FC = () => {
       boxShadow: "0px 3px 1px -2px rgba(0, 0, 0, 0.06), 0px 5px 3px -2px rgba(0, 0, 0, 0.02)"
     }}>
       <img src="/event.jpeg" className="md:w-[200px] md:h-[200px] h-[150px] rounded-tl-lg rounded-bl-lg" alt="" />
-      <div className="p-4 w-full flex flex-col items-center justify-between">
+      <div className="p-4 w-full flex flex-col items-center justify-between gap-3">
         <div className="w-full">
-          <div className="text-black font-bold">Experiência Completa</div>
+          <div className="flex md:items-start md:justify-between md:flex-row flex-col">
+            <div className="text-black font-bold">Experiência Completa</div>
+            <div className="text-black font-bold">R$100,00</div>
+          </div>
           <p className="text-[#B4B4B4] md:flex hidden">
             Design, inovação, qualidade...
           </p>
