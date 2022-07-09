@@ -45,9 +45,10 @@ const PatracianList = [
 
 const Patrician: React.FC = () => {
   return (
-    <div className="p-4">
+    <div className="flex items-center justify-center bg-neutral-900 pt-5 pb-5">
+      <div className="p-4 md:w-[1200px]">
       <h1>Da uma espiadinha nas empresas que estarão presentes...</h1>
-      <div className="grid grid-cols-2 gap-3 mt-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
         {PatracianList.map((patracian) => {
           return (
             <div className="text-center font-bold">
@@ -57,6 +58,7 @@ const Patrician: React.FC = () => {
           )
         })}
       </div>
+    </div>
     </div>
   );
 }
