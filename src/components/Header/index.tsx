@@ -1,13 +1,13 @@
 import React from 'react';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 
 const Header: React.FC = () => {
-  const router = useRouter()
+  const router = useRouter();
   return (
-    <div className="flex items-center justify-center bg-neutral-900">
-      <div className='p-4 flex items-center justify-between md:w-[1200px]'>
-      <img src='logo_expo.png' className='w-[80px]' />
-      <div className='flex items-center justify-center gap-4'>
+    <div className='flex items-center bg-neutral-900'>
+      <div className='p-2 flex items-center justify-between w-full md:w-[1200px]'>
+        <img src='logo_expo.png' className='md:w-[80px] w-[50px]' />
+        <div className='flex items-center justify-between gap-4'>
         <div
           onClick={() => router.push('/')}
           className='hover:cursor-pointer hover:text-white text-slate-100'
@@ -22,15 +22,14 @@ const Header: React.FC = () => {
         </div>
         <div
           onClick={() => router.push('/')}
-          className='hover:cursor-pointer p-2 pl-4 pr-4 bg-[#7f5f00] hover:bg-[#c69500] rounded-md text-white font-bold'
+            className='hover:cursor-pointer text-orange-400 hover:text-orange-500 font-bold'
         >
           Mais informações
         </div>
       </div>
+      </div>
     </div>
-    </div>
-
   );
-}
+};
 
 export default Header;

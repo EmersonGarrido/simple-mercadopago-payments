@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 const Action: React.FC = () => {
   const router = useRouter()
   return (
-    <div className='w-full text-center mt-10 flex flex-col items-center justify-center gap-5'>
+    <div className='w-full text-center mt-10 flex flex-col items-center justify-center gap-5 pt-5 pb-5'>
       <div>
         <h1 className='text-2xl'>
           Seja bem vinda(o) a <b>Expo Vip Beleza</b>

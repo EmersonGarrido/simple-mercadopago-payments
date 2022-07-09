@@ -51,9 +51,9 @@ const Patrician: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
         {PatracianList.map((patracian) => {
           return (
-            <div className="text-center font-bold border-2 border-black/5 p-3 rounded-md">
+            <div className="text-center border-2 border-black/5 p-3 rounded-md">
               <img src={patracian.image} className="rounded-sm" />
-              <h1>{patracian.title}</h1>
+              <h1 className="text-black">{patracian.title}</h1>
             </div>
           )
         })}
