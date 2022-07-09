@@ -1,6 +1,9 @@
 import React from 'react';
+import { useRouter } from 'next/router'
+
 
 const Action: React.FC = () => {
+  const router = useRouter()
   return (
     <div className='w-full text-center mt-10 flex flex-col items-center justify-center gap-5'>
       <div>
@@ -11,7 +14,7 @@ const Action: React.FC = () => {
         <b className='text-lg'>Shopping Bosque dos Ipês, Campo Grande</b>
       </div>
 
-      <button className='bg-orange-400 font-bold hover:bg-orange-500 p-3 rounded-full w-[300px]'>
+      <button onClick={() => router.push('/produtos')} className='bg-orange-400 font-bold hover:bg-orange-500 p-3 rounded-full w-[300px]'>
         COMPRAR INGRESSO
       </button>
     </div>
