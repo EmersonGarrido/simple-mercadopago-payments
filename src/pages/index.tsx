@@ -1,9 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Header from 'components/Header'
-import Action from 'components/Action'
-import Patrician from 'components/Patrician'
-import Footer from 'components/Footer'
+import Header from 'components/Header';
+import Action from 'components/Action';
+import Patrician from 'components/Patrician';
+import Footer from 'components/Footer';
+
+// Login com Google
+// Cadastro do usuario
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +25,7 @@ const Home: NextPage = () => {
 
         <Action />
 
-        <div className="flex items-center justify-center p-4">
+        <div className='flex items-center justify-center p-4'>
           <iframe
             width='390'
             height='215'
