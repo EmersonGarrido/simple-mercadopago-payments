@@ -97,7 +97,7 @@ const EventList = [
 const Products: React.FC = () => {
   const router = useRouter();
   async function handlePaymenyEvent(event: any) {
-    const url = await axios({
+    const data = await axios({
       method: 'POST',
       url: '/api/payments',
       data: {
@@ -113,7 +113,7 @@ const Products: React.FC = () => {
         console.log(err);
       });
 
-    router.push(`${url}`);
+    router.push(`${data.url}`);
   }
 
   return (
