@@ -28,7 +28,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
       auto_return: 'approved',
     };
     const response = await mercadopago.preferences.create(preference);
-    res.status(200).json({ url: response.body.init_point });
+    console.log(response.body)
+    res.status(200).json({ url: response.body.sandbox_init_point });
   } catch (error) {
     console.log(error);
   }
