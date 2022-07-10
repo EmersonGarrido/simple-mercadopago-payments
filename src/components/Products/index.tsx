@@ -113,7 +113,7 @@ const Products: React.FC = () => {
         console.log(err);
       });
 
-    console.log(url);
+    router.push(`${url}`);
   }
 
   return (

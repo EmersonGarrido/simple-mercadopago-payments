@@ -7,7 +7,7 @@ const accessToken = "TEST-6333471751745298-070807-6dfbcdf3bdbbf2ef09f39f827e8476
 mercadopago.configurations.setAccessToken(accessToken);
 
 type Data = {
-  id: string;
+  url: string;
 };
 
 const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
@@ -28,7 +28,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
       auto_return: 'approved',
     };
     const response = await mercadopago.preferences.create(preference);
-    res.status(200).json({ id: response.body });
+    res.status(200).json({ url: response.body.init_point });
   } catch (error) {
     console.log(error);
   }
