@@ -22,7 +22,7 @@ const Header: React.FC = () => {
         </div>
         <div
           onClick={() => router.push('/')}
-            className='hover:cursor-pointer text-orange-400 hover:text-orange-500 font-bold'
+            className='hover:cursor-pointer text-orange-400 hover:text-orange-500'
         >
           Mais informações
         </div>
