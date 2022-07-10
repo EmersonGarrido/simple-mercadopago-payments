@@ -209,7 +209,7 @@ const PatracianList = [
   {
     id: 42,
     title: 'Cm Cosméticos',
-    image: '/patrocinios/cpm3cosmeticos.jpeg',
+    image: '/patrocinios/cmcosmeticos.jpeg',
   },
   {
     id: 43,

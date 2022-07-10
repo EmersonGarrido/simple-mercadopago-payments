@@ -4,6 +4,7 @@ interface CardProductProps {
   event: {
     title: string;
     price: number;
+    description: string;
     key: number;
   };
   handlePaymenyEvent: (data: any) => void;
@@ -26,11 +27,13 @@ const CardProduct: React.FC<CardProductProps> = ({ event, handlePaymenyEvent }) 
       <div className='p-4 w-full flex flex-col items-center justify-between gap-3'>
         <div className='w-full'>
           <div className='flex md:items-start md:justify-between md:flex-row flex-col'>
-            <div className='text-[#7D7D7D] font-bold'>Experiência Completa</div>
-            <div className='text-[#7D7D7D]'>R$100,00</div>
+            <div className='text-[#7D7D7D] font-bold'>{event.title}</div>
+            <div className='text-[#7D7D7D]'>R${event.price}</div>
           </div>
-          <p className='text-[#B4B4B4] md:flex hidden'>Design, inovação, qualidade...</p>
-          <p className='text-[#B4B4B4] md:hidden'>Saiba mais</p>
+          <div className='md:w-[300px] md:h-[100px]'>
+            <p className='text-[#B4B4B4] md:flex hidden'>{event.description}</p>
+          </div>
+          <p className='text-[#B4B4B4] md:hidden w-[160px] truncate'>{event.description}</p>
         </div>
         <div className='w-full flex md:justify-between md:items-center md:flex-row flex-col gap-2'>
           <button
@@ -39,7 +42,7 @@ const CardProduct: React.FC<CardProductProps> = ({ event, handlePaymenyEvent }) 
           >
             Comprar Agora
           </button>
-          <div className='text-[#B4B4B4] text-center md:text-end cursor-pointer hover:text-black'>
+          <div className='text-[#B4B4B4] text-center md:text-end cursor-pointer hidden md:flex hover:text-black'>
             Compartilhar
           </div>
         </div>
