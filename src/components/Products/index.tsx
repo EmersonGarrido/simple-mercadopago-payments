@@ -17,8 +17,13 @@ const EventList = [
     id: 2,
     title: 'Congresso Emprevip',
     price: 0,
-    description: '',
-    full_description: '',
+    description:
+      'O foco é levar de forma diferenciada aos empresários alternativas de melhorias e crescimento em suas empresas e projetos',
+    full_description: `O foco do EMPREVIP é levar de forma diferenciada aos empresários alternativas de melhorias e crescimento em suas empresas e projetos.
+
+    Os empresários empreendedores são responsáveis por elevar a inovação e criatividade nos novos mercados. Portanto melhorar as características do bom empreendedor, não desviar dos motivos que te levou a empreender, são de extrema relevância, além de entender a importância do empreendedorismo nas empresas e no mercado.
+    
+    E aí... Preparado para descobertas e novas experiências no EMPREVIP?`,
     image: '',
     url: '',
   },
@@ -87,8 +92,9 @@ const EventList = [
     id: 8,
     title: 'Congresso Inspira Moda',
     price: 0,
-    description: '',
-    full_description: '',
+    description:
+      'Vai levar para os convidados formas alternadas, uma maneira diferente,quebrando paradigmas ou costume mais predominante.',
+    full_description: `Vai levar para os convidados formas alternadas, uma maneira diferente,quebrando paradigmas ou costume mais predominante. Uma variedade de estilos unindo glamour e tendências e formas de se vestir apreciada por variedades de pessoas. Inspira Moda está presente em várias expressões. Venha inspirar no seu Stilo!`,
     image: '',
     url: '',
   },
