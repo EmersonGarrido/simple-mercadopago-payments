@@ -2,9 +2,11 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import mercadopago from 'mercadopago';
 import { CreatePreferencePayload } from 'mercadopago/models/preferences/create-payload.model';
 
-const accessToken = "TEST-6333471751745298-070807-6dfbcdf3bdbbf2ef09f39f827e847654-294413052";
+const accessToken = "APP_USR-8861077331107253-071300-7ee3515bb9f291bc1e759dbc220a8124-294413052";
 
 mercadopago.configurations.setAccessToken(accessToken);
+mercadopago.configurations.sandbox = true;
+mercadopago.configurations.show_promise_error = true;
 
 type Data = {
   url: string;
@@ -29,7 +31,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
     };
     const response = await mercadopago.preferences.create(preference);
     console.log(response.body)
-    res.status(200).json({ url: response.body.sandbox_init_point });
+    res.status(200).json({ url: response.body.init_point });
   } catch (error) {
     console.log(error);
   }

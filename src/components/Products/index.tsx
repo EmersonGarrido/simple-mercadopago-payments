@@ -4,29 +4,29 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 
 const EventList = [
-  {
-    id: 1,
-    title: 'Experiência Completa',
-    price: 0,
-    description: ``,
-    full_description: ``,
-    image: '',
-    url: '',
-  },
-  {
-    id: 2,
-    title: 'Congresso Emprevip',
-    price: 0,
-    description:
-      'O foco é levar de forma diferenciada aos empresários alternativas de melhorias e crescimento em suas empresas e projetos',
-    full_description: `O foco do EMPREVIP é levar de forma diferenciada aos empresários alternativas de melhorias e crescimento em suas empresas e projetos.
+  // {
+  //   id: 1,
+  //   title: 'Experiência Completa',
+  //   price: 0,
+  //   description: ``,
+  //   full_description: ``,
+  //   image: '',
+  //   url: '',
+  // },
+  // {
+  //   id: 2,
+  //   title: 'Congresso Emprevip',
+  //   price: 0,
+  //   description:
+  //     'O foco é levar de forma diferenciada aos empresários alternativas de melhorias e crescimento em suas empresas e projetos',
+  //   full_description: `O foco do EMPREVIP é levar de forma diferenciada aos empresários alternativas de melhorias e crescimento em suas empresas e projetos.
 
-    Os empresários empreendedores são responsáveis por elevar a inovação e criatividade nos novos mercados. Portanto melhorar as características do bom empreendedor, não desviar dos motivos que te levou a empreender, são de extrema relevância, além de entender a importância do empreendedorismo nas empresas e no mercado.
-    
-    E aí... Preparado para descobertas e novas experiências no EMPREVIP?`,
-    image: '',
-    url: '',
-  },
+  //   Os empresários empreendedores são responsáveis por elevar a inovação e criatividade nos novos mercados. Portanto melhorar as características do bom empreendedor, não desviar dos motivos que te levou a empreender, são de extrema relevância, além de entender a importância do empreendedorismo nas empresas e no mercado.
+
+  //   E aí... Preparado para descobertas e novas experiências no EMPREVIP?`,
+  //   image: '',
+  //   url: '',
+  // },
   {
     id: 3,
     title: 'Congresso Inspira Make',

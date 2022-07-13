@@ -1,8 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
-import Header from 'components/Header'
-import Footer from 'components/Footer'
-import Products from 'components/Products'
+import Header from 'components/Header';
+import Footer from 'components/Footer';
+import Products from 'components/Products';
 
 const Produtos: React.FC = () => {
   return (
@@ -17,6 +17,6 @@ const Produtos: React.FC = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default Produtos;
