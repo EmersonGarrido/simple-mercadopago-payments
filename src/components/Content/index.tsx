@@ -75,27 +75,29 @@ const contents: ContentProps[] = [
 const Content: React.FC = () => {
   const router = useRouter();
   return (
-    <div className='bg-[#EEEEEE] grid grid-cols-1 md:grid-cols-1 gap-3 mt-4 p-3'>
-      {contents.map((isContent: ContentProps) => {
-        return (
-          <div
-            key={isContent.id}
-            className='bg-white text-[#B4B4B4] p-3 rounded-md flex flex-col md:flex-row items-center justify-center'
-          >
-            <img src={isContent.image} className='md:w-[200px] rounded-md' />
-            <div className='flex flex-col gap-3 p-3'>
-              <h1 className='font-bold'>{isContent.title}</h1>
-              <p>{isContent.content}</p>
-            </div>
-            <button
-              onClick={() => router.push('/ingressos')}
-              className='h-[40px] text-[rgba(0,0,0,.5)] hover:bg-[#d0cfcf]/80 bg-[rgba(0,0,0,.1)] p-2 pl-3 pr-3 rounded-md'
+    <div className='bg-[#EEEEEE] mt-4 p-3 flex items-center justify-center'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-3 md:w-[1200px]'>
+        {contents.map((isContent: ContentProps) => {
+          return (
+            <div
+              key={isContent.id}
+              className='bg-white text-[#B4B4B4] p-3 rounded-md flex flex-col items-center justify-center border-b-2'
             >
-              Ver ingressos
-            </button>
-          </div>
-        );
-      })}
+              <img src={isContent.image} className='md:w-[200px] rounded-md' />
+              <div className='flex flex-col gap-3 p-3'>
+                <h1 className='font-bold'>{isContent.title}</h1>
+                <p>{isContent.content}</p>
+              </div>
+              <button
+                onClick={() => router.push('/ingressos')}
+                className='h-[40px] text-[rgba(0,0,0,.5)] hover:bg-[#d0cfcf]/80 bg-[rgba(0,0,0,.1)] p-2 pl-3 pr-3 rounded-md'
+              >
+                Ver ingressos
+              </button>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
