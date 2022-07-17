@@ -4,6 +4,7 @@ import Header from 'components/Header';
 import Action from 'components/Action';
 import Patrician from 'components/Patrician';
 import Footer from 'components/Footer';
+import Content from 'components/Content';
 
 // Login com Google
 // Cadastro do usuario
@@ -48,6 +49,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
+
+        <Content />
 
         <Patrician />
 
