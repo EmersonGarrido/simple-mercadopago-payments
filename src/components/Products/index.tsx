@@ -38,7 +38,7 @@ const EventList = [
     As maquiagens são tendências de moda dentro de um amplo universo, externando obras de artes incríveis para cada indivíduo.
     INSPIRA MAKE, você é sua própria inspiração!`,
     image: '',
-    url: '',
+    url: 'https://mpago.la/2KUNEMh',
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const EventList = [
     full_description: `Inspira Beauty, Meeting educacional nunca visto , envolvendo conceitos, tendências, cuidados com a haste e gestão .
     Um booster de aprendizado, unindo modernidade, tecnologia no universo de cores e mechas, melhorando seu desenvolvimento no salão. Acha que parou por aqui? Não, ainda contaremos com um super desfile baseados nos conceitos Retros , Clássicos e Futuristas voltados para todos os profissionais Hair Styles do Centro Oeste.`,
     image: '',
-    url: '',
+    url: 'https://mpago.la/1cU8Ao4',
   },
   {
     id: 5,
@@ -61,7 +61,8 @@ const EventList = [
     Além de reunir pela primeira vez nomes de  experts do setor da Estética no  Congresso Científico.
     Público alvo: Profissionais e estudantes do setor. Biomédicos, Esteticistas, Farmacêuticos, Fisioterapeutas, Odontologistas, Nutricionistas, Educado físico e enfermeiros.`,
     image: '',
-    url: '',
+    url: 'https://mpago.la/13PpqJV',
+    url_meia: 'https://mpago.la/2mFWjSS',
   },
   {
     id: 6,
@@ -74,7 +75,7 @@ const EventList = [
     As unhas tornaram-se um acessório importante para compor o “Look” do dia-a-dia, entender sobre o mercado e suas tendências da moda Nails é a única forma de projetar uma carreira de sucesso.
     INSPIRA NAILS evento exclusivo para Designer de unhas e manicures.`,
     image: '',
-    url: '',
+    url: 'https://mpago.la/1i39pZX',
   },
   {
     id: 7,
@@ -86,49 +87,28 @@ const EventList = [
     A empresa Barber e Negócios investe em experiências e conhecimentos em um dos setores que mais crescem(o mercado masculino)
     Um dos maiores eventos organizado pela empresa Barber e Negócios é o CIRCUITO DE BARBEARIA, evento esse que passaram grandes renomes da Barbearia Internacional e nacional.`,
     image: '',
-    url: '',
+    url: 'https://mpago.la/1UkyJmw',
   },
-  {
-    id: 8,
-    title: 'Congresso Inspira Moda',
-    price: 0,
-    description:
-      'Vai levar para os convidados formas alternadas, uma maneira diferente,quebrando paradigmas ou costume mais predominante.',
-    full_description: `Vai levar para os convidados formas alternadas, uma maneira diferente,quebrando paradigmas ou costume mais predominante. Uma variedade de estilos unindo glamour e tendências e formas de se vestir apreciada por variedades de pessoas. Inspira Moda está presente em várias expressões. Venha inspirar no seu Stilo!`,
-    image: '',
-    url: '',
-  },
+  // {
+  //   id: 8,
+  //   title: 'Congresso Inspira Moda',
+  //   price: 0,
+  //   description:
+  //     'Vai levar para os convidados formas alternadas, uma maneira diferente,quebrando paradigmas ou costume mais predominante.',
+  //   full_description: `Vai levar para os convidados formas alternadas, uma maneira diferente,quebrando paradigmas ou costume mais predominante. Uma variedade de estilos unindo glamour e tendências e formas de se vestir apreciada por variedades de pessoas. Inspira Moda está presente em várias expressões. Venha inspirar no seu Stilo!`,
+  //   image: '',
+  //   url: '',
+  // },
 ];
 
 const Products: React.FC = () => {
   const router = useRouter();
-  async function handlePaymenyEvent(event: any) {
-    const data = await axios({
-      method: 'POST',
-      url: '/api/payments',
-      data: {
-        title: event.title,
-        price: event.price,
-        quantity: 1,
-      },
-    })
-      .then((res) => {
-        return res.data;
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-
-    router.push(`${data.url}`);
-  }
 
   return (
     <div className='flex justify-center items-center bg-[#EEEEEE]'>
       <div className='p-5 grid grid-cols-1 md:grid-cols-2 gap-4 w-[1200px]'>
         {EventList.map((isEvent: any) => {
-          return (
-            <CardProduct key={isEvent.id} event={isEvent} handlePaymenyEvent={handlePaymenyEvent} />
-          );
+          return <CardProduct key={isEvent.id} event={isEvent} />;
         })}
       </div>
     </div>

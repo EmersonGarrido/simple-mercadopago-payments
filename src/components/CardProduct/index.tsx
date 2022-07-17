@@ -6,11 +6,12 @@ interface CardProductProps {
     price: number;
     description: string;
     key: number;
+    url: string;
+    url_meia?: string;
   };
-  handlePaymenyEvent: (data: any) => void;
 }
 
-const CardProduct: React.FC<CardProductProps> = ({ event, handlePaymenyEvent }) => {
+const CardProduct: React.FC<CardProductProps> = ({ event }) => {
   return (
     <div
       key={event.key}
@@ -19,11 +20,11 @@ const CardProduct: React.FC<CardProductProps> = ({ event, handlePaymenyEvent }) 
         boxShadow: '0 1px 2px 0 rgb(0 0 0 / 12%)',
       }}
     >
-      <img
+      {/* <img
         src='/event.jpeg'
         className='md:w-[200px] md:h-[200px] h-[170px] rounded-tl-lg rounded-bl-lg'
         alt=''
-      />
+      /> */}
       <div className='p-4 w-full flex flex-col items-center justify-between gap-3'>
         <div className='w-full'>
           <div className='flex md:items-start md:justify-between md:flex-row flex-col'>
@@ -36,12 +37,22 @@ const CardProduct: React.FC<CardProductProps> = ({ event, handlePaymenyEvent }) 
           <p className='text-[#B4B4B4] md:hidden w-[160px] truncate'>{event.description}</p>
         </div>
         <div className='w-full flex md:justify-between md:items-center md:flex-row flex-col gap-2'>
-          <button
-            onClick={() => handlePaymenyEvent({ event })}
-            className='text-[rgba(0,0,0,.5)] hover:bg-[#d0cfcf]/80 bg-[rgba(0,0,0,.1)] p-2 pl-3 pr-3 rounded-md'
-          >
-            Comprar Agora
-          </button>
+          <div className='flex'>
+            <button
+              onClick={() => window.open(event.url)}
+              className='text-[rgba(0,0,0,.5)] hover:bg-[#d0cfcf]/80 bg-[rgba(0,0,0,.1)] p-2 pl-3 pr-3 rounded-md'
+            >
+              Comprar Agora
+            </button>
+            {event.url_meia && (
+              <button
+                onClick={() => window.open(event.url)}
+                className='ml-10 text-[rgba(0,0,0,.5)] hover:bg-[#d0cfcf]/80 bg-[rgba(0,0,0,.1)] p-2 pl-3 pr-3 rounded-md'
+              >
+                Comprar Meia Entrada
+              </button>
+            )}
+          </div>
           <div className='text-[#B4B4B4] text-center md:text-end cursor-pointer hidden md:flex hover:text-black'>
             Compartilhar
           </div>
