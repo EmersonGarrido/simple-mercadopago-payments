@@ -45,7 +45,7 @@ const CardProduct: React.FC<CardProductProps> = ({ event }) => {
                 onClick={() => window.open(event.url)}
                 className='text-[rgba(0,0,0,.5)] hover:bg-[#d0cfcf]/80 bg-[rgba(0,0,0,.1)] p-2 pl-3 pr-3 rounded-md'
               >
-                Comprar Agora
+                Fazer Inscrição
               </button>
             )}
             {event.url_meia && (
