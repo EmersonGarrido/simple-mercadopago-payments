@@ -33,7 +33,7 @@ const contents: ContentProps[] = [
     Reunirá profissionais e estudantes no segmento de estética, beleza, saúde e bem estar de todo Centro Oeste com a finalidade de reciclagem de conhecimentos, através de conceitos científicos e inovadores. As principais marcas do seguimento de produtos e serviços estarão presentes expondo e apresentando seus lançamentos e tendências mercadológicas. Além de reunir pela primeira vez nomes de experts do setor da Estética no Congresso Científico.
     Público alvo: Profissionais e estudantes do setor. Biomédicos, Esteticistas, Farmacêuticos, Fisioterapeutas, Odontologistas, Nutricionistas, Educado físico e enfermeiros.
     `,
-    image: '/content/congresso.jpeg',
+    image: '/content/congresso-novo.jpeg',
   },
   {
     id: 4,
