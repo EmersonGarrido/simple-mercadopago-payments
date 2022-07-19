@@ -37,7 +37,7 @@ const EventList = [
     Produtos na área da estética, barbearia, cabelo, maquiagem, manicure e moda. Teremos empresas que fortalecem os negócios  como áreas de varejo  tecnologia, saúde- bem estar, e negócios imobiliários, além de palestras  e ações interativas. 
     A entrada para quem vai visitar é 1 Kilo de alimento( obrigatório o cadastro)`,
     image: '',
-    url_free: 'https://www.even3.com.br/expovip/',
+    url_free: 'https://www.even3.com.br/EXPOVIP',
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ const EventList = [
     As maquiagens são tendências de moda dentro de um amplo universo, externando obras de artes incríveis para cada indivíduo.
     INSPIRA MAKE, você é sua própria inspiração!`,
     image: '',
-    url: 'https://mpago.la/2KUNEMh',
+    url: 'https://www.even3.com.br/InspiraMake',
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const EventList = [
     full_description: `Inspira Beauty, Meeting educacional nunca visto , envolvendo conceitos, tendências, cuidados com a haste e gestão .
     Um booster de aprendizado, unindo modernidade, tecnologia no universo de cores e mechas, melhorando seu desenvolvimento no salão. Acha que parou por aqui? Não, ainda contaremos com um super desfile baseados nos conceitos Retros , Clássicos e Futuristas voltados para todos os profissionais Hair Styles do Centro Oeste.`,
     image: '',
-    url: 'https://mpago.la/1cU8Ao4',
+    url: 'https://www.even3.com.br/inspirabeauty',
   },
   {
     id: 5,
@@ -73,8 +73,8 @@ const EventList = [
     Além de reunir pela primeira vez nomes de  experts do setor da Estética no  Congresso Científico.
     Público alvo: Profissionais e estudantes do setor. Biomédicos, Esteticistas, Farmacêuticos, Fisioterapeutas, Odontologistas, Nutricionistas, Educado físico e enfermeiros.`,
     image: '',
-    url: 'https://mpago.la/13PpqJV',
-    url_meia: 'https://mpago.la/2mFWjSS',
+    url: 'https://www.even3.com.br/congressoestetica',
+    //url_meia: 'https://mpago.la/2mFWjSS',
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ const EventList = [
     As unhas tornaram-se um acessório importante para compor o “Look” do dia-a-dia, entender sobre o mercado e suas tendências da moda Nails é a única forma de projetar uma carreira de sucesso.
     INSPIRA NAILS evento exclusivo para Designer de unhas e manicures.`,
     image: '',
-    url: 'https://mpago.la/1i39pZX',
+    url: 'https://www.even3.com.br/inspiranails/',
   },
   {
     id: 7,
@@ -99,7 +99,7 @@ const EventList = [
     A empresa Barber e Negócios investe em experiências e conhecimentos em um dos setores que mais crescem(o mercado masculino)
     Um dos maiores eventos organizado pela empresa Barber e Negócios é o CIRCUITO DE BARBEARIA, evento esse que passaram grandes renomes da Barbearia Internacional e nacional.`,
     image: '',
-    url: 'https://mpago.la/1UkyJmw',
+    url: 'https://www.even3.com.br/circuitodebarbearia',
   },
 ];
 
