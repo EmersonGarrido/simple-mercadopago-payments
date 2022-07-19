@@ -89,16 +89,21 @@ const EventList = [
     image: '',
     url: 'https://mpago.la/1UkyJmw',
   },
-  // {
-  //   id: 8,
-  //   title: 'Congresso Inspira Moda',
-  //   price: 0,
-  //   description:
-  //     'Vai levar para os convidados formas alternadas, uma maneira diferente,quebrando paradigmas ou costume mais predominante.',
-  //   full_description: `Vai levar para os convidados formas alternadas, uma maneira diferente,quebrando paradigmas ou costume mais predominante. Uma variedade de estilos unindo glamour e tendências e formas de se vestir apreciada por variedades de pessoas. Inspira Moda está presente em várias expressões. Venha inspirar no seu Stilo!`,
-  //   image: '',
-  //   url: '',
-  // },
+  {
+    id: 8,
+    title: 'Expo Vip Beleza ',
+    price: 0,
+    description: 'Entrada 1kg de alimento não perecível..',
+    full_description: `Expo Vip, a maior feira de Beleza do Centro Oeste. Será  em Campo Grande MS  no shopping  Bosque dos Ipês.
+
+    Produtos na área da estética, barbearia, cabelo, maquiagem, manicure e moda. Teremos empresas que fortalecem os negócios  como áreas de varejo  tecnologia, saúde- bem estar, e negócios imobiliários, além de palestras  e ações interativas. 
+    
+    
+    
+    A entrada para quem vai visitar é 1 Kilo de alimento( obrigatório o cadastro)`,
+    image: '',
+    url_free: 'https://www.even3.com.br/expovip/',
+  },
 ];
 
 const Products: React.FC = () => {
