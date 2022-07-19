@@ -42,7 +42,7 @@ const EventList = [
   {
     id: 3,
     title: 'Congresso Inspira Make',
-    price: 150.0,
+    price: 127.0,
     description: 'O conceito de beleza se humanizou e hoje segue menos regras.',
     full_description: `INSPIRA MAKE
     O conceito de beleza se humanizou e hoje segue menos regras e respeita mais a diversidade.
@@ -65,7 +65,7 @@ const EventList = [
   {
     id: 5,
     title: 'Congresso Científico de Estética',
-    price: 250.0,
+    price: 494.00,
     description:
       'Reunirá profissionais e estudantes no segmento de ESTÉTICA, BELEZA SAÚDE E BEM ESTAR de todo Centro Oeste.',
     full_description: `Reunirá profissionais e estudantes no segmento de ESTÉTICA, BELEZA SAÚDE E BEM ESTAR de todo Centro Oeste com a finalidade de reciclagem de conhecimentos, através de conceitos científicos e inovadores.
@@ -79,7 +79,7 @@ const EventList = [
   {
     id: 6,
     title: 'Congresso  Inspira Nails',
-    price: 150.0,
+    price: 117.0,
     description:
       'Design, inovação, qualidade,  sofisticação e atendimento diferenciado serão os principais pontos abordados no maior encontro de Nails.',
     full_description: `Design, inovação, qualidade,  sofisticação e atendimento diferenciado serão os principais pontos abordados no maior encontro de Nails de todo Centro Oeste.
@@ -92,7 +92,8 @@ const EventList = [
   {
     id: 7,
     title: 'Circuito Internacional de Barbearia',
-    price: 350.0,
+    price: 350.0 ,
+    price_associados: 500.00,
     description:
       'O circuito  de barbearia organizado pela empresária Sibele Rodrigues, CEO da empresa Barber e Negócios nasceu em 2017',
     full_description: `O circuito  de barbearia organizado pela empresária Sibele Rodrigues, CEO da empresa Barber e Negócios nasceu em 2017, focado no crescimento de educação e negócios para profissionais Barbeiros de todo Centro Oeste. 

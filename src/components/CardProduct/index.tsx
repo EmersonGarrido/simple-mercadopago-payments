@@ -9,6 +9,7 @@ interface CardProductProps {
     url?: string;
     url_meia?: string;
     url_free?: string;
+    price_associados?: string;
   };
 }
 
@@ -61,6 +62,14 @@ const CardProduct: React.FC<CardProductProps> = ({ event }) => {
                 className='text-[rgba(0,0,0,.5)] hover:bg-[#d0cfcf]/80 bg-[rgba(0,0,0,.1)] p-2 pl-3 pr-3 rounded-md'
               >
                 Fazer Inscrição Gratuita
+              </button>
+            )}
+            {event.price_associados && (
+              <button
+                onClick={() => window.open(event.price_associados)}
+                className='text-[rgba(0,0,0,.5)] hover:bg-[#d0cfcf]/80 bg-[rgba(0,0,0,.1)] p-2 pl-3 pr-3 rounded-md'
+              >
+                Comprar Valor Associados
               </button>
             )}
             {/* {event.url_meia && (
