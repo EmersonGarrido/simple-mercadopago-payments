@@ -35,9 +35,6 @@ const EventList = [
     full_description: `Expo Vip, a maior feira de Beleza do Centro Oeste. Será  em Campo Grande MS  no shopping  Bosque dos Ipês.
 
     Produtos na área da estética, barbearia, cabelo, maquiagem, manicure e moda. Teremos empresas que fortalecem os negócios  como áreas de varejo  tecnologia, saúde- bem estar, e negócios imobiliários, além de palestras  e ações interativas. 
-    
-    
-    
     A entrada para quem vai visitar é 1 Kilo de alimento( obrigatório o cadastro)`,
     image: '',
     url_free: 'https://www.even3.com.br/expovip/',

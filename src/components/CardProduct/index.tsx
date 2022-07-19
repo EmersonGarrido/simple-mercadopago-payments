@@ -49,7 +49,7 @@ const CardProduct: React.FC<CardProductProps> = ({ event }) => {
             )}
             {event.url_meia && (
               <button
-                onClick={() => window.open(event.url)}
+                onClick={() => window.open(event.url_meia)}
                 className='ml-10 text-[rgba(0,0,0,.5)] hover:bg-[#d0cfcf]/80 bg-[rgba(0,0,0,.1)] p-2 pl-3 pr-3 rounded-md'
               >
                 Comprar Meia Entrada
@@ -57,7 +57,7 @@ const CardProduct: React.FC<CardProductProps> = ({ event }) => {
             )}
             {event.url_free && (
               <button
-                onClick={() => window.open(event.url)}
+                onClick={() => window.open(event.url_free)}
                 className='text-[rgba(0,0,0,.5)] hover:bg-[#d0cfcf]/80 bg-[rgba(0,0,0,.1)] p-2 pl-3 pr-3 rounded-md'
               >
                 Fazer Inscrição Gratuita
