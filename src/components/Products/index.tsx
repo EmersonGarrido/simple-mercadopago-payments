@@ -94,8 +94,8 @@ const EventList = [
   {
     id: 7,
     title: 'Circuito Internacional de Barbearia',
-    price: 350.0 ,
-    price_associados: 500.00,
+    price: 500.00,
+    price_associados: 350.00,
     description:
       'O circuito  de barbearia organizado pela empresária Sibele Rodrigues, CEO da empresa Barber e Negócios nasceu em 2017',
     full_description: `O circuito  de barbearia organizado pela empresária Sibele Rodrigues, CEO da empresa Barber e Negócios nasceu em 2017, focado no crescimento de educação e negócios para profissionais Barbeiros de todo Centro Oeste. 
