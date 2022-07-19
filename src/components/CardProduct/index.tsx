@@ -33,7 +33,6 @@ const CardProduct: React.FC<CardProductProps> = ({ event }) => {
             <div className='text-[#7D7D7D] font-bold'>{event.title}</div>
             <div className='text-[#7D7D7D]'>R${event.price}</div>
           </div>
-          <div className='text-[#7D7D7D]'>R${event.price_associados}</div>
           <div className='md:w-[300px] md:h-[100px]'>
             <p className='text-[#B4B4B4] md:flex hidden'>{event.description}</p>
           </div>
