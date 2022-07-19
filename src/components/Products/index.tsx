@@ -66,6 +66,8 @@ const EventList = [
     id: 5,
     title: 'Congresso Científico de Estética',
     price: 494.00,
+    price_associados: 247.00,
+
     description:
       'Reunirá profissionais e estudantes no segmento de ESTÉTICA, BELEZA SAÚDE E BEM ESTAR de todo Centro Oeste.',
     full_description: `Reunirá profissionais e estudantes no segmento de ESTÉTICA, BELEZA SAÚDE E BEM ESTAR de todo Centro Oeste com a finalidade de reciclagem de conhecimentos, através de conceitos científicos e inovadores.
