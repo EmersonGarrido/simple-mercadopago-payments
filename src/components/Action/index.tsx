@@ -15,7 +15,7 @@ const Action: React.FC = () => {
       </div>
 
       <button
-        onClick={() => router.push('/produtos')}
+        onClick={() => router.push('/ingressos')}
         className='bg-white text-black w-[300px] font-bold p-3 rounded-md'
       >
         COMPRAR INGRESSO
