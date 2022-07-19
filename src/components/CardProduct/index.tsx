@@ -64,7 +64,7 @@ const CardProduct: React.FC<CardProductProps> = ({ event }) => {
                 Fazer Inscrição Gratuita
               </button>
             )}
-            {event.price_associados && (
+            {/*event.price_associados && (
               <button
                 onClick={() => window.open(event.price_associados)}
                 className='text-[rgba(0,0,0,.5)] hover:bg-[#d0cfcf]/80 bg-[rgba(0,0,0,.1)] p-2 pl-3 pr-3 rounded-md'
