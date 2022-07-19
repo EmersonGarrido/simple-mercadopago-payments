@@ -17,7 +17,7 @@ const Header: React.FC = () => {
             Início
           </div>
           <div
-            onClick={() => router.push('/produtos')}
+            onClick={() => router.push('/ingressos')}
             className='hover:cursor-pointer hover:text-white text-slate-100'
           >
             Ingressos
