@@ -15,7 +15,7 @@ const contents: ContentProps[] = [
     content: `
     O conceito de beleza se humanizou e hoje segue menos regras e respeita mais a diversidade. Inspira Make não somente vai mostrar os conceitos e tendências, mais irá reforçar a identidade de cada indivíduo, realçando a personalidade e as especificidades que cada um tem. As maquiagens são tendências de moda dentro de um amplo universo, externando obras de artes incríveis para cada indivíduo. INSPIRA MAKE, você é sua própria inspiração!
     `,
-    image: '/content/inspira-make.jpeg',
+    image: '/content/inspira-make-novo.jpeg',
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const contents: ContentProps[] = [
     Reunirá profissionais e estudantes no segmento de estética, beleza, saúde e bem estar de todo Centro Oeste com a finalidade de reciclagem de conhecimentos, através de conceitos científicos e inovadores. As principais marcas do seguimento de produtos e serviços estarão presentes expondo e apresentando seus lançamentos e tendências mercadológicas. Além de reunir pela primeira vez nomes de experts do setor da Estética no Congresso Científico.
     Público alvo: Profissionais e estudantes do setor. Biomédicos, Esteticistas, Farmacêuticos, Fisioterapeutas, Odontologistas, Nutricionistas, Educado físico e enfermeiros.
     `,
-    image: '/content/congresso-novo.jpeg',
+    image: '/content/cong-cient-novo.jpeg',
   },
   {
     id: 4,
