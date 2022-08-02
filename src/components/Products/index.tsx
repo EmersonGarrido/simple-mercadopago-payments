@@ -91,7 +91,7 @@ const EventList = [
     image: '',
     url: 'https://www.even3.com.br/inspiranails/',
   },
-  {
+  /*{
     id: 7,
     title: 'Circuito Internacional de Barbearia',
     price: 500.00,
@@ -103,7 +103,7 @@ const EventList = [
     Um dos maiores eventos organizado pela empresa Barber e Negócios é o CIRCUITO DE BARBEARIA, evento esse que passaram grandes renomes da Barbearia Internacional e nacional.`,
     image: '',
     url: 'https://www.even3.com.br/circuitodebarbearia',
-  },
+  },*/
 ];
 
 const Products: React.FC = () => {

@@ -42,7 +42,7 @@ const contents: ContentProps[] = [
     Design, inovação, qualidade, sofisticação e atendimento diferenciado serão os principais pontos abordados no maior encontro de Nails de todo Centro Oeste. Superar as expectativas do cliente, e descobrir quem sou e onde quero chegar para me tornar uma profissional de sucesso, é um quesito de grande valia. As unhas tornaram-se um acessório importante para compor o “Look” do dia-a-dia, entender sobre o mercado e suas tendências da moda Nails é a única forma de projetar uma carreira de sucesso. Inspira Nails evento exclusivo para Designer de unhas e manicures.`,
     image: '/content/inspira-nail.jpeg',
   },
-  {
+  /*{
     id: 5,
     title: 'Circuito Internacional de Barbearia',
     content: `
